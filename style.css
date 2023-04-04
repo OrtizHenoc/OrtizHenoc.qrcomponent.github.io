@@ -10,9 +10,12 @@ html{
 
 body{
     font-family: 'Outfit', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     background-color: hsl(212, 45%, 89%);
     color: hsl(218, 44%, 22%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .attribution { 
     font-size: 1.5rem; 
@@ -23,28 +26,28 @@ body{
 }
 .container {
     background-color: hsl(0, 0%, 100%);
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.2rem;
-    margin: 30px auto;
+    margin: 60px auto;
     border-radius: 10px;
     width: 90vw;
     max-width: 320px;
+    max-height: 490px;
 }
 .container img{
     width: 30rem;
     border-radius: 10px;
 }
-.container h2,.attribution{
+.container h1,.attribution{
     margin: 10px 25px 10px ;
     text-align: center;
 }
 footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    margin-top: auto;
     width: 100%;
     text-align: center;
 }
